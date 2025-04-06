@@ -58,7 +58,7 @@ customer_sales_df.filter("cus_customer_id is not null") \
     .show()
 
     
-3. Average Discount Given Across All Products
+### 3. Average Discount Given Across All Products
 Query: Calculate the average discount given on sales for each product.
 
 Method: Group by product name and calculate the average discount.
@@ -70,7 +70,7 @@ product_sales_df.filter("pd_product_id is not null") \
     .show()
 
     
-4. Number of Unique Products Sold in Each Region
+### 4. Number of Unique Products Sold in Each Region
 Query: Find the number of unique products sold in each region.
 
 Method: Join Customer and Sales datasets, group by region, and count distinct product IDs.
@@ -84,7 +84,7 @@ customer_sales_df.filter("region is not null") \
     .show()
     
     
-5. Total Profit Generated in Each State
+### 5. Total Profit Generated in Each State
 Query: Calculate the total profit generated in each state.
 
 Method: Group by state and sum the profit.
@@ -97,7 +97,7 @@ customer_sales_df.filter("state is not null") \
     .show()
     
     
-6. Product Sub-Category with the Highest Sales
+### 6. Product Sub-Category with the Highest Sales
 Query: Find the product sub-category with the highest sales.
 
 Method: Group by sub-category and sum the sales.
@@ -112,7 +112,7 @@ product_sales_df.filter("sub_category is not null") \
     .show()
 
     
-7. Average Age of Customers in Each Segment
+### 7. Average Age of Customers in Each Segment
 Query: Calculate the average age of customers in each segment.
 
 Method: Group by segment and calculate the average age.
@@ -124,7 +124,7 @@ customer_df.filter("segment is not null") \
     .show()
 
     
-8. Number of Orders Shipped in Each Shipping Mode
+### 8. Number of Orders Shipped in Each Shipping Mode
 Query: Find how many orders were shipped in each shipping mode.
 
 Method: Group by ship mode and count the number of orders.
@@ -136,7 +136,7 @@ sales_df.filter("ship_mode is not null") \
     .show()
 
     
-9. Total Quantity of Products Sold in Each City
+### 9. Total Quantity of Products Sold in Each City
 Query: Calculate the total quantity of products sold in each city.
 
 Method: Group by city and sum the quantity.
@@ -149,7 +149,7 @@ customer_sales_df.filter("city is not null") \
     .show()
 
     
-10. Customer Segment with the Highest Profit Margin
+### 10. Customer Segment with the Highest Profit Margin
 Query: Identify the customer segment with the highest profit margin.
 
 Method: Group by segment and sum the profit.
